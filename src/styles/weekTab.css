@@ -1,0 +1,7 @@
+.week-tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 2rem;
+  gap: 1rem;
+}

@@ -1,0 +1,61 @@
+@media (max-width: 1200px) {
+  header {
+    height: 300px !important;
+  }
+
+  .app {
+    font-size: 14px;
+  }
+
+  .content-wrapper {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ReactModal__Content {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  header {
+    height: 250px !important;
+  }
+  .app {
+    font-size: 12px;
+  }
+  .content-wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs button {
+    padding: 0.3rem 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .meal-item {
+    width: 100%;
+    max-width: 100px;
+  }
+
+  .ReactModal__Content {
+    width: 95%;
+    padding: 1rem;
+  }
+  header {
+    height: 200px !important;
+  }
+  .app {
+    font-size: 10px;
+  }
+  .content-wrapper {
+    padding: 0px;
+  }
+}

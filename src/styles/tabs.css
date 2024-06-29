@@ -1,0 +1,40 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  color: #1e1e1e;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-size: 1em;
+  transition: background 0.3s ease;
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 600;
+  flex-grow: 0;
+}
+
+.addToWeekBtn {
+  width: 208px;
+  max-width: 208px;
+  height: 48px;
+  border-radius: 3.58px;
+  opacity: 0px;
+  font-weight: 700;
+  color: #ffffff !important;
+  /* background: #9b9b9b !important; */
+}
+
+.tabs button.active {
+  color: #004370;
+  border-bottom: 6px solid #004370;
+}
+.tabs button:hover {
+  cursor: pointer;
+}
