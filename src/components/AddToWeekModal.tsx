@@ -48,11 +48,6 @@ const AddToWeekModal: React.FC<AddToWeekModalProps> = ({
             onClick={() => toggleWeek(index)}
             style={{
               backgroundColor: selectedWeeks.includes(index) ? 'cyan' : '',
-              padding: '5px',
-              margin: '5px',
-              cursor: 'pointer',
-              borderRadius: '3px',
-              display: 'inline-block',
             }}
           >
             {week}

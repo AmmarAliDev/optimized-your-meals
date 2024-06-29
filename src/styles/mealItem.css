@@ -17,7 +17,7 @@
 
 .image-background {
   height: 246px;
-  width: 345px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   border-radius: 15.35px;
