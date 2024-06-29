@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Modal from 'react-modal'
 import '../styles/modal.css'
 
@@ -16,6 +16,13 @@ const AddToWeekModal: React.FC<AddToWeekModalProps> = ({
   addToWeek,
 }) => {
   const [selectedWeeks, setSelectedWeeks] = useState<number[]>([]) // Use an array for multiple selections
+
+  // Reset selected weeks when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setSelectedWeeks([])
+    }
+  }, [isOpen])
 
   const handleSave = () => {
     addToWeek(selectedWeeks) // Pass selectedWeeks array to addToWeek
@@ -40,7 +47,12 @@ const AddToWeekModal: React.FC<AddToWeekModalProps> = ({
             key={index}
             onClick={() => toggleWeek(index)}
             style={{
-              backgroundColor: selectedWeeks.includes(index) ? 'cyan' : 'none',
+              backgroundColor: selectedWeeks.includes(index) ? 'cyan' : '',
+              padding: '5px',
+              margin: '5px',
+              cursor: 'pointer',
+              borderRadius: '3px',
+              display: 'inline-block',
             }}
           >
             {week}
